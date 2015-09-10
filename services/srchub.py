@@ -31,13 +31,13 @@ class srchub(Service):
             # get source
             if "git clone" in sourceSoupText:
                 project.repoType = REPO_TYPES.git
-                project.repoURL = "git://" + self.DOMAIN + "/" + projectName + ".git"
+                project.repoURL = "git://beta.datanethost.net/" + projectName + ".git"
             elif "svn co" in sourceSoupText:
                 project.repoType = REPO_TYPES.SVN
-                project.repoURL = "https://" + self.DOMAIN + "/svn/" + projectName + "/"
+                project.repoURL = self.DOMAIN + "/svn/" + projectName + "/"
             else:
                 project.repoType = REPO_TYPES.hg
-                project.repoURL = "https://" + self.DOMAIN + "/hg/" + projectName + "/"
+                project.repoURL = self.DOMAIN + "/hg/" + projectName + "/"
 
 
             # get downloads

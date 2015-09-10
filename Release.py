@@ -16,3 +16,9 @@ class Release(object):
 
     def getChecksum(self):
         return self.checksum
+
+    def __str__(self):
+        return self.getFileName() + " => " + self.getFileURL()
+
+    def __repr__(self):
+        return str(self)

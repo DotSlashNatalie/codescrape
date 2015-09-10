@@ -34,3 +34,9 @@ class Issue(IssueComment):
 
     def getCommnets(self):
         return self.comments
+
+    def __str__(self):
+        return self.getTitle()
+
+    def __repr__(self):
+        return str(self)

@@ -20,3 +20,9 @@ class Wiki(object):
 
     def getUpdated(self):
         return self.updated
+
+    def __str__(self):
+        return self.getSummary()
+
+    def __repr__(self):
+        return str(self)
