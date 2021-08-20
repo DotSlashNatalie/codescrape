@@ -2,7 +2,7 @@
 
 Version 1.0
 
-By: Nathan Adams
+By: Natalie Adams
 
 License: MIT
 
